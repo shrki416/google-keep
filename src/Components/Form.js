@@ -3,7 +3,8 @@ import React from "react";
 export default function Form() {
   return (
     <form>
-      <h1>This is the form</h1>
+      <input type="text" placeholder="title" name="tile" value="" />
+      <textarea name="content" value="" rows="10"></textarea>
     </form>
   );
 }
