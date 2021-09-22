@@ -21,12 +21,12 @@ const GlobalStyle = createGlobalStyle`
         max-width: 100%;
         min-height: 100%;
         overflow-x: hidden;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
         background-color: var(--grey);
         color: var(--white);
         font-family: var(--font);
         font-size: var(--fz-md);
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
     }
 `;
 
