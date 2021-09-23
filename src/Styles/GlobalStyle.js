@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--dark-grey);
+        background: var(--grey);
     }
 `;
 
