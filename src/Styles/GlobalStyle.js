@@ -7,26 +7,17 @@ const GlobalStyle = createGlobalStyle`
     ${variables}
 
     html {
-        box-sizing: border-box;
+        font-family: var(--font);
     }
-
+    
     *, *:before, *:after {
-        box-sizing: inherit;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
     }
 
     body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        max-width: 100%;
-        min-height: 100%;
-        overflow-x: hidden;
-        background-color: var(--grey);
-        color: var(--white);
-        font-family: var(--font);
-        font-size: var(--fz-md);
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
+        background: var(--dark-grey);
     }
 `;
 
