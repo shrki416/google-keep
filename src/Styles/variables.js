@@ -8,7 +8,7 @@ const variables = css`
     --grey: #282c34;
     --light-grey: #b3b3b3;
     --white: #ffffff;
-    --yellow: #f5ba13;
+    --yellow: #f4b400;
 
     --font: "Fira Code", -apple-system, BlinkMacSystemFont, system-ui,
       sans-serif;
