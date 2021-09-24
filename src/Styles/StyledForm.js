@@ -24,15 +24,12 @@ const StyledForm = styled.form`
     position: absolute;
     right: 18px;
     bottom: -18px;
-    background-color: var(--yellow);
-    color: var(--white);
-    border: none;
-    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--yellow);
     width: 36px;
     height: 36px;
     box-shadow: 0 1px 3px rgb(138, 137, 137);
     cursor: pointer;
-    outline: none;
   }
 `;
 
