@@ -3,30 +3,42 @@ import { css } from "styled-components/macro";
 const fonts = css`
   @font-face {
     font-family: "Fira Code";
-    src: url("../assets/fonts/FiraCode-Light.ttf") format("truetype");
+    font-style: normal;
     font-weight: 300;
-    font-style: normal;
+    src: local(""),
+      url("../fonts/fira-code-v12-latin-300.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/fira-code-v12-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-
+  /* fira-code-regular - latin */
   @font-face {
     font-family: "Fira Code";
-    src: url("../assets/fonts/FiraCode-Regular.ttf") format("truetype");
+    font-style: normal;
     font-weight: 400;
-    font-style: normal;
+    src: local(""),
+      url("../fonts/fira-code-v12-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/fira-code-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-
+  /* fira-code-500 - latin */
   @font-face {
     font-family: "Fira Code";
-    src: url("../assets/fonts/FiraCode-Medium.ttf") format("truetype");
+    font-style: normal;
     font-weight: 500;
-    font-style: normal;
+    src: local(""),
+      url("../fonts/fira-code-v12-latin-500.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/fira-code-v12-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-
+  /* fira-code-700 - latin */
   @font-face {
     font-family: "Fira Code";
-    src: url("../assets/fonts/FiraCode-Bold.ttf") format("truetype");
-    font-weight: 700;
     font-style: normal;
+    font-weight: 700;
+    src: local(""),
+      url("../fonts/fira-code-v12-latin-700.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/fira-code-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 `;
 
