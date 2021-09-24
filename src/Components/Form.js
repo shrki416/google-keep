@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { StyledForm } from "../Styles";
-import AddIcon from "@material-ui/icons/Add";
-import { Fab, Zoom } from "@material-ui/core";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import Fab from "@mui/material/Fab";
+import Zoom from "@mui/material/Zoom";
 import Note from "./Note";
 
 export default function Form() {
@@ -56,12 +57,12 @@ export default function Form() {
           value={content}
           onChange={(e) => change(e)}
           onClick={() => setIsExpanded(true)}
-          placeholder="Keep a note..."
+          placeholder="Keep a note"
         />
 
         <Zoom in={isExpanded}>
           <Fab>
-            <AddIcon onClick={submit} />
+            <AddCircleIcon onClick={submit} fontSize="large" />
           </Fab>
         </Zoom>
       </StyledForm>
