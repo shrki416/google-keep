@@ -5,8 +5,6 @@ import { StyledNote } from "../Styles";
 function Note({ note, handleDelete, handleEdit }) {
   const { title, content } = note;
 
-  console.log(note);
-
   return (
     <StyledNote>
       <h3>{title}</h3>
@@ -14,8 +12,8 @@ function Note({ note, handleDelete, handleEdit }) {
       <button onClick={() => handleDelete(note.id)}>
         <DeleteIcon />
       </button>
-      <button onClick={() => handleEdit(note.id)}>
-        <EditIcon />
+      <button>
+        <EditIcon onClick={() => handleEdit(note.id)} />
       </button>
     </StyledNote>
   );

@@ -11,7 +11,6 @@ import {
   collection,
   doc,
   addDoc,
-  updateDoc,
   deleteDoc,
 } from "@firebase/firestore";
 
@@ -25,15 +24,13 @@ export default function Form() {
 
   const { title, content } = note;
 
-  // console.log(notes);
+  useEffect(() => getNotes(), []);
 
-  useEffect(
-    () =>
-      onSnapshot(collection(db, "notes"), (snapshot) => {
-        setNotes(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      }),
-    []
-  );
+  const getNotes = () => {
+    onSnapshot(collection(db, "notes"), (snapshot) => {
+      setNotes(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    });
+  };
 
   const change = (e) => {
     const { name, value } = e.target;
@@ -47,9 +44,6 @@ export default function Form() {
 
     const collectionRef = collection(db, "notes");
     await addDoc(collectionRef, payload);
-    // const newNote = { ...note, id: Date.now() };
-
-    // setNotes([...notes, newNote]);
     clearNote();
   };
 
@@ -61,8 +55,6 @@ export default function Form() {
   };
 
   const handleDelete = async (id) => {
-    // const collectionRef = collection(db, "notes");
-    // setNotes(notes.filter((note) => note.id !== id));
     await deleteDoc(doc(db, "notes", id));
   };
 
