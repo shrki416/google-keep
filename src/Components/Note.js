@@ -2,7 +2,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import { StyledNote } from "../Styles";
 
-function Note({ note, handleDelete, handleEdit }) {
+function Note({ note, handleDelete }) {
   const { title, content } = note;
 
   return (
@@ -12,9 +12,9 @@ function Note({ note, handleDelete, handleEdit }) {
       <button onClick={() => handleDelete(note.id)}>
         <DeleteIcon />
       </button>
-      <button>
+      {/* <button>
         <EditIcon onClick={() => handleEdit(note.id)} />
-      </button>
+      </button> */}
     </StyledNote>
   );
 }
