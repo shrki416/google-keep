@@ -58,11 +58,6 @@ export default function Form() {
     await deleteDoc(doc(db, "notes", id));
   };
 
-  const handleEdit = (id) => {
-    console.log("edit function called");
-    console.log(id);
-  };
-
   return (
     <>
       <StyledForm>
@@ -92,12 +87,7 @@ export default function Form() {
         </Zoom>
       </StyledForm>
       {notes.map((note, index) => (
-        <Note
-          key={index}
-          note={note}
-          handleDelete={handleDelete}
-          handleEdit={handleEdit}
-        />
+        <Note key={index} note={note} handleDelete={handleDelete} />
       ))}
     </>
   );
