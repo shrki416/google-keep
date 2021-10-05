@@ -6,8 +6,6 @@ A notes app inspired by google's keep note taking app.
 
 - [Deployed Site](https://aa-notes.com/)
 
-## Installation
-
 ## Tech Stack
 
 **Client:** React, Styled Components
